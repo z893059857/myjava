@@ -10,8 +10,9 @@ public class ReflectUse2{
 		al.add("a");
 
 		Class<?> clazz=al.getClass();
-		Method m=clazz.getMethod("add",Object.class);
-		m.invoke(al,1);
+		Method m1=clazz.getMethod("add",Object.class);
+		m1.invoke(al,1);
 		System.out.println(al);
+		System.out.println("my reflect file");
 	}
 }
